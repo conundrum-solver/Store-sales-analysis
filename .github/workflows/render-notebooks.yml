@@ -15,4 +15,4 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run notebook
-        run: jupyter nbconvert --to notebook --execute your_notebook.ipynb
+        run: jupyter nbconvert --to notebook --execute Superstore Data Analysis.ipynb
