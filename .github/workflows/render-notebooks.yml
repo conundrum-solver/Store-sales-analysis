@@ -1,0 +1,12 @@
+name: run-notebook
+
+on: [push]  # Trigger the workflow on push events
+
+jobs:
+  render-notebooks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: yaananth/run-notebook@v2
+        with:
+          output_dir: output  # Directory to store rendered notebooks
