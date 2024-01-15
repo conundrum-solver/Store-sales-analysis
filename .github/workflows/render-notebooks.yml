@@ -1,4 +1,4 @@
-name: Render Jupyter Notebooks
+name: run-notebook
 
 on: [push]  # Trigger the workflow on push events
 
@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: jupyter/render-notebooks@v1
+      - uses: yaananth/run-notebook@v2
         with:
           output_dir: output  # Directory to store rendered notebooks
